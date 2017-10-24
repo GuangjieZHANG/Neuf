@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.neuf.MainActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Les règles :"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/Orange"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="  -Le premier élément peut bouger dans tous les cas ."
+            android:textSize="25dp"
+            android:textColor="@color/Orange"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="  -Pour le n ieme élément , vous ne pouvez bouger que "
+            android:textSize="25dp"
+            android:textColor="@color/Orange"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="  --Devant vous , [1,n-2] sont en bas , mais (n-1) est en haut . "
+            android:textSize="22dp"
+            android:textColor="@color/Orange"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="   Notre but , mettre tous les éléments en bas ! "
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+   <Button
+       android:layout_width="120dp"
+       android:layout_height="wrap_content"
+       android:text="commencer"
+       android:textColor="@color/White"
+       android:background="@color/Orange"
+       android:layout_marginLeft="40dp"
+       android:id="@+id/tostart"/>
+
+        <Button
+            android:id="@+id/toexit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Orange"
+            android:text="exit"
+            android:textColor="@color/White"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
